@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 90%;
+    height: 95vh;
+    margin: auto;
+}
+
+nav{
+    position: fixed;
+}
+
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.navLogo a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navMenu{
+    width: 100%;
+}
+
+.resimMenu{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.my{
+    font-size: 50px;
+    margin-right: 1%;
+    color: #7f00ff;
+}
+
+.navItem{
+    display: flex;  
+    list-style-type: none;
+    justify-content: end;
+    align-items: center;  
+}
+
+.navItem li a{
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: #3d535f;
+    font-size: 20px;
+}
+
+.navItem li a:hover{
+    color: #7f00ff;
+}
+
+.navItem li a:active{
+    color: #7f00ff;
+}
+
+.contentim{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding-top: 8%;
+     
+}
+.contentLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    padding-bottom: 10%;
+}
+
+.contentRight{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( 180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%) , url(images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #3d535f;
+}
+
+h1{
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+.bubble2{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    animation: iki 6s linear infinite;
+}
+
+@keyframes iki{
+    50%{
+        left: 40%;
+        top: 10%;
+
+    }
+}
+
+.bubble1{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    animation: bir 6s linear infinite;
+}
+
+@keyframes bir{
+    50%{
+        width: 25%;
+        height: 25%;
+    }
+}
+
+
+
+.bubble3{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 7%;
+    right: 0;
+    animation: uc 6s linear infinite;
+}
+
+@keyframes uc{
+    50%{
+        right: 5%;
+        top: 10%;
+    }
+}
+
+.educationContent{
+    width: 100%;
+    height: 100vh;
+    display: none; 
+    z-index: 5;
+    padding-top: 200px;
+}
+
+.educationLeft{
+    width: 30%;
+    height: 100%;
+}
+
+.never{
+    font-size: 50px;
+}
+
+.educationRight{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 0px 5%;
+}
+
+.card{
+    width: 150px;
+    height: 200px;
+    float: left;
+    border-radius: 10px;
+    padding: 2px 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s linear;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card:hover{
+    width: 200px;
+    height: 300px;
+}
+
+.cardIlkokul{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url(images/ilkokul.jpg);
+}
+
+.cardOrtaokul{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)),url(images/ortaokul.jpg);
+}
+
+.cardLise{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url(images/lise.jpg);
+}
+
+.cardUniversite{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url(images/universite.jpg);
+}
+
+.acilacak-icerik {
+    display: none;
+}
+
+.card:hover .acilacak-icerik {
+    display: block;
+}
+  
+.educationText{
+    color: white;
+}
+
+.educationContentText{
+    color: rgb(223, 216, 216);
+}
+
+
+.logom{
+    
+    height: auto;
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    bottom: 4%;   
+   
+}
+
+.logoLink{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: inline;
+    vertical-align: middle;
+        
+}
+
+.follow{
+    display: inline;
+    margin-right: 5px;
+    font-size: 10px;
+    color: #3d535f;
+}
+
+
+@media screen and (max-width:1025px) {
+
+    .contentRight{
+        background-position-y: 0px;
+    }
+
+    
+}
+
+@media screen and (max-width:800px) {
+
+    .resimMenu{
+        display: block;
+        padding-top: 3px;
+        cursor: pointer;
+    }
+
+
+    .navItem{
+        display: none;
+    }
+
+    .contentim{
+        display: block;
+        height: 100vh;
+    }
+
+    .contentLeft{
+        height: 60%;
+        padding-bottom: 0;
+    }
+
+    .contentRight{
+        height: 40%;
+        width: 70%;
+        background-image: linear-gradient( 180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%) ,url(images/1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .iam{
+        display: block;
+    }
+
+    .educationContent{
+        display: block;
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .educationLeft{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .educationRight{
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        
+    }
+
+    .card{
+        padding-left: 0;
+    }
+
+    .card:hover{
+        width: 90%;       
+    }
+  
+
+
+}
